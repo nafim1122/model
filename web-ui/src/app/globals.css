@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Prism.js theme customization for C code */
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #e5e7eb;
+  font-family: 'Fira Code', 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  tab-size: 4;
+  hyphens: none;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre[class*="language-"] {
+  padding: 1rem;
+  margin: 0;
+  overflow: auto;
+  border-radius: 0.5rem;
+  background: #1e1e1e;
+}
+
+.light pre[class*="language-"] {
+  background: #1e293b;
+}
+
+/* Token colors - VS Code Dark+ inspired */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955;
+}
+
+.token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #ce9178;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d4d4d4;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.function,
+.token.class-name {
+  color: #dcdcaa;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #d16969;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+/* Typing animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.typing-cursor::after {
+  content: '▋';
+  animation: blink 1s infinite;
+  color: #10b981;
+}
+
+/* Message animations */
+.message-enter {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Textarea auto-resize */
+.chat-input {
+  field-sizing: content;
+  min-height: 52px;
+  max-height: 200px;
+}
+
+/* Code block header */
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #2d2d2d;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.light .code-block-header {
+  background: #1e293b;
+}
+
+/* Sidebar hover effects */
+.conversation-item {
+  transition: all 0.15s ease;
+}
+
+.conversation-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.light .conversation-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Button effects */
+.btn-primary {
+  @apply bg-accent hover:bg-accent-hover text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center gap-2;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200;
+}
+
+.light .btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800;
+}
+
+/* Input styling */
+.input-field {
+  @apply bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200;
+}
+
+.light .input-field {
+  @apply bg-white border-gray-300 text-gray-900;
+}
+
+/* Dropdown styling */
+.dropdown {
+  @apply absolute right-0 mt-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-50 overflow-hidden;
+}
+
+.light .dropdown {
+  @apply bg-white border-gray-200;
+}
+
+.dropdown-item {
+  @apply px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 cursor-pointer transition-colors duration-150;
+}
+
+.light .dropdown-item {
+  @apply text-gray-700 hover:bg-gray-100;
+}
