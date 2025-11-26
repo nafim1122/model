@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "total": 10,
+    "compiled_count": 0,
+    "compiled_rate": 0.0,
+    "asan_ok_count": 0,
+    "asan_ok_rate": 0.0,
+    "cppcheck_ok_count": 0,
+    "cppcheck_ok_rate": 0.0,
+    "forbidden_count": 0,
+    "forbidden_rate": 0.0,
+    "run_ok_count": 0,
+    "run_ok_rate": 0.0,
+    "avg_run_time": null
+  },
+  "details": [
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 0
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 1
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 2
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 3
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 4
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 5
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 6
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 7
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 8
+    },
+    {
+      "forbidden": false,
+      "forbidden_pattern": null,
+      "gcc_available": false,
+      "compiled": false,
+      "asan_available": false,
+      "cppcheck_available": false,
+      "clang_tidy_available": false,
+      "clang_format_available": false,
+      "index": 9
+    }
+  ],
+  "tools": {
+    "gcc": false,
+    "cppcheck": false,
+    "clang_tidy": false,
+    "clang_format": false
+  }
+}

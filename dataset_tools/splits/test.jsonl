@@ -1,0 +1,3 @@
+{"prompt": "\nint sum(int *arr, int n) {\n int s = 0;\n for (int i = 0; i", "completion": "<= n; ++i) { // bug: <= should be <\n s += arr[i];\n }\n return s;\n}", "pair_type": "partial_completion", "origin": "dataset_tools\\cleaned\\bug_examples\\sum.buggy.c"}
+{"prompt": "// implement: return sum", "completion": "int main() {\n printf(\"%d\\n\", add(2,3));\n return 0;\n}", "pair_type": "comment_to_code", "origin": "dataset_tools\\cleaned\\repo_local\\adder.c"}
+{"prompt": "\nint add(int a, int b) {\n // implement: retu", "completion": "rn sum\n return a + b;\n}", "pair_type": "partial_completion", "origin": "dataset_tools\\cleaned\\repo_local\\adder.c"}

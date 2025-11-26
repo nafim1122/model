@@ -1,0 +1,28 @@
+{
+  "model_name_or_path": "<REPLACE_WITH_3B_MODEL>",
+  "tokenizer_name_or_path": null,
+  "train_file": "dataset_tools/splits/train.jsonl",
+  "output_dir": "./out/3b-lora",
+  "seq_length": 2048,
+
+  "use_qlora": false,
+  "lora_r": 8,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "v_proj"],
+
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-4,
+  "weight_decay": 0.0,
+  "warmup_steps": 200,
+  "fp16": true,
+  "bf16": false,
+  "save_steps": 500,
+  "logging_steps": 50,
+  "evaluation_strategy": "no",
+  "eval_file": "dataset_tools/splits/val.jsonl",
+  "seed": 42,
+  "push_to_hub": false
+}

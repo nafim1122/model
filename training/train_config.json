@@ -1,0 +1,28 @@
+{
+  "model_name_or_path": "mistralai/Mistral-7B-Instruct-v0.1",
+  "tokenizer_name_or_path": null,
+  "train_file": "dataset_tools/train_pairs.jsonl",
+  "output_dir": "./out/mistral-7b-qlora",
+  "seq_length": 2048,
+
+  "use_qlora": true,
+  "lora_r": 8,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "v_proj"],
+
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-4,
+  "weight_decay": 0.0,
+  "warmup_steps": 200,
+  "fp16": true,
+  "bf16": false,
+  "save_steps": 500,
+  "logging_steps": 50,
+  "evaluation_strategy": "no",
+  "eval_file": null,
+  "seed": 42,
+  "push_to_hub": false
+}
